@@ -1,5 +1,6 @@
 package hellocucumber;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -19,8 +20,13 @@ public class StepDefinitions2 {
     private String actualAnswer;
 
     @Before("@SecondFeature")
-    public void beforeTest(){
+    public void beforeTest2(){
         System.out.println("BEFORE TEST2");
+    }
+
+    @After("@SecondFeature")
+    public void afterTest2(){
+        System.out.println("AFTER TEST2");
     }
 
     @Given("today is {string}2")

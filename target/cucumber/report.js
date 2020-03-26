@@ -100,6 +100,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Today is or is not Friday",
   "description": "",
@@ -143,6 +146,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Today is or is not Friday",
   "description": "",
@@ -184,6 +190,9 @@ formatter.match({
   "location": "hellocucumber.StepDefinitions.i_should_be_told(java.lang.String)"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 formatter.uri("classpath:hellocucumber/is_it_friday_yet2.feature");
@@ -288,6 +297,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Today is or is not Friday2",
   "description": "",
@@ -331,6 +343,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "Today is or is not Friday2",
   "description": "",
@@ -372,6 +387,9 @@ formatter.match({
   "location": "hellocucumber.StepDefinitions2.i_should_be_told(java.lang.String)"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 });
