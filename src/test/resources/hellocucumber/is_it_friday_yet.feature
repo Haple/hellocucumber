@@ -1,6 +1,6 @@
 # new feature
 # Tags: optional
-
+@FirstFeature
 Feature: Is it Friday yet?
   Everybody wants to know when it's Friday
 
@@ -13,4 +13,3 @@ Feature: Is it Friday yet?
       | Friday | TGIF |
       | Sunday | Nope |
       | anything else! | Nope |
-

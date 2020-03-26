@@ -5,35 +5,35 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
-class IstItFriday{
+class IstItFriday2{
     static String isItFriday(String today){
         return "Friday".equals(today) ? "TGIF" : "Nope";
     }
 }
 
-public class StepDefinitions {
+public class StepDefinitions2 {
 
     private String today;
     private String actualAnswer;
 
-    @Before("@FirstFeature")
+    @Before("@SecondFeature")
     public void beforeTest(){
-        System.out.println("BEFORE TEST");
+        System.out.println("BEFORE TEST2");
     }
 
-    @Given("today is {string}")
+    @Given("today is {string}2")
     public void today_is_Sunday(String today) {
         this.today = today;
     }
 
-    @When("I ask whether it's Friday yet")
+    @When("I ask whether it's Friday yet2")
     public void i_ask_whether_it_s_Friday_yet(){
-        actualAnswer = IstItFriday.isItFriday(today);
+        actualAnswer = IstItFriday2.isItFriday(today);
     }
 
-    @Then("I should be told {string}")
+    @Then("I should be told {string}2")
     public void i_should_be_told(String expectedAnswer){
         assertEquals(expectedAnswer, actualAnswer);
     }
